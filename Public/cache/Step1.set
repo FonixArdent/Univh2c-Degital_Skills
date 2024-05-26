@@ -1,0 +1,35 @@
+            <nav id="nav-form">
+              <label for="name"> ⩥ Nom : </label>
+              <input  type="text" id="name" placeholder="Nom" />
+
+              <label for="email"> ⩥ Email : </label>
+              <input  type="email" id="email" placeholder="Mail" />
+
+              <label for="birthdate"> ⩥ Date : </label>
+              <input  type="date" id="birthdate" placeholder="Date de nessance" />
+            
+
+              <label for="age"> ⩥ Age : </label>
+              <input  type="number" id="age" min="17" step="1" placeholder="---" />
+
+              <label for="phone"> ⩥ Téléphone : </label>
+              <input  type="phone" id="phone" placeholder="+212 6********"/>
+
+              <br/>
+              <label for="gender"> ⩥ Genre : </label>
+              <select id="gender" name="gender">
+
+                <option selected value="none">....</option>
+                <option value="male">Homme</option>
+                <option value="female">Femme</option>
+                <option value="others">Autre</option>
+
+              </select>
+              <input hidden="true"  type="hidden" id="section" value="A"/>
+              <input  type="button" value="Next" onclick="SaveData()" id="Button_V2"/>
+            
+              <script type= "module">
+                  import {SaveData} from './System/Form.js'
+                  window.SaveData = SaveData;
+              </script>
+            </nav>
