@@ -1,29 +1,47 @@
-# Add Your Cv
-- By **FonixArdent** (`Pseudonyme`)
+---------------------------------------------------
 
-----------------------------------------
+# Add Your CV :
 
-## This Git Is A Project Don't Use It ⚠️
+---------------------------------------------------
 
-----------------------------------------
++ By **FonixArdent** (`Pseudonyme`)
 
-### Avant Le Démarage :
+---------------------------------------------------
+
+- ## This Git Is A University Project Don't Use It ⚠️
+- ##       It is public for specific people
+
+---------------------------------------------------
+
++ ### Avant Le Démarage :
+
+---------------------------------------------------
 
 ![Alt text](https://jemeformeaunumerique.fr/wp-content/uploads/2015/09/10-windows-10-explorateur-de-fichier.png "a image")
 
-1) Verifier que nodejs bien installé sur votre ordinateur ! pour l'installer [ici](https://nodejs.org/)` 
-   
-2) Ecrivez `powershell` dans la bar d'adresse
+---------------------------------------------------
 
-4) Puis saisir la command :
+1) ***Vérifiez que node js est installé sur votre ordinateur `pour l'installer -` [ici](https://nodejs.org/)*** .
+   
+2) **Ecrivez `powershell` dans la barre d'adresse** .
+
+3) **Saisir la command :**
 
 ```ps1
  npm install express body-parser path
 ```
  
-3) Puis ecrivez la command :
+4) **Ecrivez la command :**
  
 ```ps1
  node Server.js
 ```
-4) Enfin Allez Sur Le Liens Affichez Dans La Console
+
+5) **Et Enfin Allez Sur Le Liens Affichez Dans La Console** .
+
+
+6) ***Tips :***
+   
+   - **Il est préférable d'utiliser un navigateur privé, car il ne contient pas d'extensions et ne fait donc aucune erreur.**
+
+---------------------------------------------------
