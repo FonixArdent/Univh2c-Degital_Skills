@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../Accet/web_site.ico">
+
+    <title>Add Your CV</title>
+
+    <nav id="nav-form-style">
+
+        <link rel="stylesheet" href="..//Style/Run/Style_Form.css" id="-style">
+
+    </nav>
+
+    <script type="module" src="..//Scripts/WelcomeUser.js" defer></script>
+    <script type="module" src="..//System/OpenWindow.js" defer></script>
+    <script type="module" src="..//System/GetForm.js" defer></script>
+    <script type="module" src="..//System/Form.js" defer></script>
+
+   
+
+</head>
+
+<body>
+
+    <h1>
+        <strong>
+            <em>
+
+                <section id="title"> textarea title </section>
+
+            </em>
+        </strong>
+    </h1>
+
+    <br/>
+    <br/>
+    
+    <main class="Main">
+
+        <div class="Main_IMG">
+
+            <!-- <img alt="" src="" alt=""> -->
+
+        </div>
+
+        <div class="Main_Form">
+
+            <form id="form" class="NewFormulary">
+ 
+
+                <h4 id="h4">Click To Start</h4>
+                <input type="hidden" id="section" value="default"/>
+                <input type="button" value="Start" onclick="Step();" id="Button_V1"/>
+            
+                <script type= "module">
+                    import {SaveData} from '../System/Form.js'
+                    window.SaveData = SaveData;
+                </script>
+                <script>
+                    function Step() {
+                        document.getElementById("h4").innerHTML = "Step 1: Personal Information";
+                        document.getElementById("Button_V1").value = "Next";
+                        const Event = document.getElementById("Button_V1");
+                        Event.setAttribute('onclick', 'SaveData();');
+                    }
+                </script>
+
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+</html>

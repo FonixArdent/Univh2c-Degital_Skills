@@ -1,0 +1,29 @@
+{
+  "A": {
+    "name": "",
+    "email": "",
+    "birth": "",
+    "age": "",
+    "phone": "",
+    "gender": "none",
+    "section": "A"
+  },
+  "B": {
+    "name": "",
+    "email": "",
+    "birth": "",
+    "age": "",
+    "phone": "",
+    "gender": "none",
+    "section": "B"
+  },
+  "C": {
+    "name": "",
+    "email": "",
+    "birth": "",
+    "age": "",
+    "phone": "",
+    "gender": "none",
+    "section": "C"
+  }
+}

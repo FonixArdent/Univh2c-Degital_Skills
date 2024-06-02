@@ -1,0 +1,33 @@
+            <label hidden="true" for="name"> ⩥ Nom : </label>
+            <input hidden="true"  type="text" id="name" placeholder="Nom" />
+
+            <label hidden="true" for="email"> ⩥ Email : </label>
+            <input hidden="true"  type="email" id="email" placeholder="Mail" />
+
+            <label hidden="true" for="birthdate"> ⩥ Date : </label>
+            <input hidden="true"  type="date" id="birthdate" placeholder="Date de nessance" />
+            
+
+            <label hidden="true" for="age"> ⩥ Age : </label>
+            <input hidden="true"  type="number" id="age" min="17" step="1" placeholder="---" />
+
+            <label hidden="true" for="phone"> ⩥ Téléphone : </label>
+            <input hidden="true"  type="phone" id="phone" placeholder="+212 6********"/>
+
+            <br/>
+            <label hidden="true" for="gender"> ⩥ Genre : </label>
+            <select hidden="true" id="gender" name="gender">
+
+              <option selected value="none">....</option>
+              <option value="male">Homme</option>
+              <option value="female">Femme</option>
+              <option value="others">Autre</option>
+
+            </select>
+            <input hidden="true"  type="hidden" id="section" value="B"/>
+            <input type="button" value="Next" onclick="SaveData()"/>
+            
+            <script type= "module">
+                import {SaveData} from './System/Form.js'
+                window.SaveData = SaveData;
+            </script>
