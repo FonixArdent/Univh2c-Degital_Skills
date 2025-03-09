@@ -1,3 +1,4 @@
+# ==================================================== #
 import json
 import io
 
@@ -9,3 +10,5 @@ if info["name"] != "" and \
     info["email"] != "" and \
         info[""] != "" :
             ""
+# ==================================================== #
+# In progress # Object Check if all information are correct 
