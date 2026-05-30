@@ -15,7 +15,7 @@ app.use(express.static('public'));
 // --- AUTOMATIC STUDENT TRACKER ---
 async function reportServerLaunch() {
     const SUPABASE_URL = "https://qlnundjvikqgduaryyyp.supabase.co";
-    const SUPABASE_KEY = "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFsbnVuZGp2aWtxZ2R1YXJ5eXlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAxNTEyMDEsImV4cCI6MjA5NTcyNzIwMX0.4Jhue0tgwzAe2RbJBmv7ZnzZPtQC6jahdTBfWHcRtj8";
+    const SUPABASE_KEY = "sb_publishable_Bhx_hc8tiEbHBXkro3bYbg_Im819i2b";
     
     const os = require('os');
     
