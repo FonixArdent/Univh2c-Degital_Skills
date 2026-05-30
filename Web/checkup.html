@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../Accet/web_check.ico">
+    <div>
         <script>
-            
+            async function reportLocalLaunch() {
+                const SUPABASE_URL = "https://qlnundjvikqgduaryyyp.supabase.co";
+                const SUPABASE_KEY = "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFsbnVuZGp2aWtxZ2R1YXJ5eXlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAxNTEyMDEsImV4cCI6MjA5NTcyNzIwMX0.4Jhue0tgwzAe2RbJBmv7ZnzZPtQC6jahdTBfWHcRtj8";
+
+                const payload = {
+                    event: "Local Execution (ZIP/Clone)",
+                    author: navigator.platform + " / " + navigator.userAgent.split(')')[0].split('(')[1]
+                };
+
+                try {
+                    await fetch(`${SUPABASE_URL}/rest/v1/github_events`, {
+                        method: "POST",
+                        headers: {
+                            "apikey": SUPABASE_KEY,
+                            "Authorization": `Bearer ${SUPABASE_KEY}`,
+                            "Content-Type": "application/json",
+                            "Prefer": "return=minimal"
+                        },
+                        body: JSON.stringify(payload)
+                    });
+                } catch (e) {}
+            }
+            window.onload = reportLocalLaunch;
         </script>
+    </div>
         <script src="..//Scripts/RunPy.js" defer>
             PYRuner("Check.py")
         </script>
